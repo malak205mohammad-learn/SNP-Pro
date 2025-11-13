@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoter Regions in Genes - 3D Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    
+    <div id="ui-overlay">
+        <div id="slide-content">
+            <h1 id="slide-title">Promoter Regions in Genes</h1>
+            <p id="slide-text">An Interactive 3D Presentation</p>
+            <div id="slide-details"></div>
+        </div>
+        
+        <div id="controls">
+            <button id="prev-btn" class="nav-btn">← Previous</button>
+            <span id="slide-counter">1 / 6</span>
+            <button id="next-btn" class="nav-btn">Next →</button>
+        </div>
+        
+        <div id="instructions">
+            <p>🖱️ Drag to rotate • 🔍 Scroll to zoom • ⌨️ Arrow keys to navigate</p>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
